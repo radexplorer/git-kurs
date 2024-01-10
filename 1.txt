@@ -1,1 +1,2 @@
 Git jest trudny
+Git jest prosty
