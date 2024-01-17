@@ -1,6 +1,6 @@
 # Nazwa Projektu
 
-Krótki opis projektu, wyjaśniający, czym jest i do czego służy.
+Krótki opis projektu, wyjaśniający, czym jest i do czego służy. Do uzupełnienia.
 
 ## Rozpoczęcie pracy
 
