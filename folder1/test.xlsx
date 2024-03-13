@@ -1,0 +1,8 @@
+|      A       |       B        |       C      |       D       |      E       |
+|--------------|----------------|--------------|---------------|--------------|
+|    Projekt   |    Zadanie     |   Priorytet  |    Wykonawca  |   Status     |
+|--------------|----------------|--------------|---------------|--------------|
+|    Proj1     |   Deploy aplikacji  |     High     |   John Doe    |  In Progress |
+|    Proj1     |   Aktualizacja bazy danych  |   Medium   |   Alice Smith | Not Started  |
+|    Proj2     |   Konfiguracja klastra Kubernetes  |   High     |   Bob Johnson |  Completed   |
+|    Proj2     |   Testy jednostkowe  |    Medium   |   Emily Brown | Not Started  |
