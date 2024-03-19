@@ -1,14 +1,73 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Początek pracy nad projektem</title>
+    <title>DevOps Dashboard</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
 </head>
 
 <body>
-
+    <h1>DevOps Dashboard</h1>
+    <h2>Projekty i Zadania</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Projekt</th>
+                <th>Zadanie</th>
+                <th>Priorytet</th>
+                <th>Wykonawca</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Proj1</td>
+                <td>Deploy aplikacji</td>
+                <td>High</td>
+                <td>John Doe</td>
+                <td>In Progress</td>
+            </tr>
+            <tr>
+                <td>Proj1</td>
+                <td>Aktualizacja bazy danych</td>
+                <td>Medium</td>
+                <td>Alice Smith</td>
+                <td>Not Started</td>
+            </tr>
+            <tr>
+                <td>Proj2</td>
+                <td>Konfiguracja klastra Kubernetes</td>
+                <td>High</td>
+                <td>Bob Johnson</td>
+                <td>Completed</td>
+            </tr>
+            <tr>
+                <td>Proj2</td>
+                <td>Testy jednostkowe</td>
+                <td>Medium</td>
+                <td>Emily Brown</td>
+                <td>Not Started</td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 
 </html>
