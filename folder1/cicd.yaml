@@ -1,0 +1,27 @@
+stages:
+  - test
+  - build
+  - deploy
+
+variables:
+  PROJECT_NAME: "my-project"
+
+test:
+  stage: test
+  script:
+    - python -m unittest tests.py # Uruchomienie testów jednostkowych
+
+build:
+  stage: build
+  script:
+    - echo "Build process goes here" # Dodaj instrukcje budowy aplikacji
+
+deploy:
+  stage: deploy
+  script:
+    - echo "Deploy process goes here" # Dodaj instrukcje wdrażania aplikacji
+  environment:
+    name: production
+    url: http://example.com
+  only:
+    - master # Wdrażaj tylko dla brancha master
