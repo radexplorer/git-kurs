@@ -1,6 +1,6 @@
 |      A       |       B        |       C      |       D       |      E       |
 |--------------|----------------|--------------|---------------|--------------|
-|    Projekt   |    Zadanie     |   Priorytet  |    Wykonawca  |   Status     |
+|    Projekt   |    Zadania     |   Priorytet  |    Wykonawca  |   Status     |
 |--------------|----------------|--------------|---------------|--------------|
 |    Proj1     |   Deploy aplikacji  |     High     |   John Doe    |  In Progress |
 |    Proj1     |   Aktualizacja bazy danych  |   Medium   |   Alice Smith | Not Started  |
