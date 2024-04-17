@@ -1,23 +1,48 @@
+##imie = (input("Jak masz na imie: "))
+##wiek = (int(input("Cześc " + imie + " ile masz lat: ")))
+##print("Za rok bedziesz miał", wiek+1, "lat")
 
-print("lalal")
+'''
+import math
 
-czyDuży = True
-liczba = 2**3
-a = liczba
+choice = input("* - możenie, / - dzielenie, + - dodawanie,  - - odejmowanie: ")
 
+a = int(input("First number: "))
+b = int(input("Second number: "))
 
-print(a)
+if (choice == "*"):
+    print(a*b)
+elif (choice == "/"):
+    if(b==0):
+        print("Nie dziel przez 0")
+    else:
+        print(a/b)
+elif (choice == "+"):
+    print(a+b)
+elif(choice=="-"):
+    print(a-b)
 
-cenaNettpJava = 100
-podatek = 1.23
-cenaBruttoJava = cenaNettpJava*podatek
-print(cenaBruttoJava)
-print(czyDuży)
+x = int(input("Podaj liczbe: "))
 
-imie = "Paula"
-print(imie[-1])
-print(imie[1:3])
+if x < 0:
+    x = -x
+print(x)
+'''
 
-###################
-import math 
-help(math.ceil)
+#Pętla od  1 do 5
+'''
+liczba = 100
+
+while liczba >= 0:
+    print(liczba)
+    liczba -= 1
+'''
+wynik = 0
+
+i=0
+
+while i<4:
+    x = int(input("Podaj liczbe: "))
+    wynik += x
+    i += 1
+print("Wynink to : ", wynik)
