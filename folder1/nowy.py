@@ -100,7 +100,7 @@ while i < 3:
     i += 1
 '''
 #Zgadywana liczba
-
+'''
 szukanaLiczba = 40
 zgdaywanaLiczba = 0
 
@@ -109,6 +109,63 @@ while zgdaywanaLiczba != szukanaLiczba:
 
     if (zgdaywanaLiczba > szukanaLiczba):
         print("Mniej")
-    elif (zgdaywanaLiczba <)
+    elif (zgdaywanaLiczba < szukanaLiczba):
+        print("Więcej")
     else:
-        print("Try again")
+        print("Brawo")
+        '''
+### LISTA ###
+
+
+'''
+for name in names:
+    print(name)
+
+print(names[-1])
+names[-1] = "Wera"
+print(names)
+'''
+## IN, NOT IN
+'''
+print("Kasa" in names)
+
+if ("Paula" not in names):
+    print("Siema")
+else:
+    print("Nie ma")
+
+print(3* numbers)
+print([4, 5]+numbers)
+numbers = [4,45]+numbers
+print(numbers)
+
+
+name = input("Podaj imie: ")
+name = name.capitalize
+
+if name in names:
+    print("You have access")
+else: 
+    print("You don't have access")
+'''
+### OPERACJE NA LISTACH
+
+names = ["Paula", "Ania", "Beata", "Kasia", "Gienek"]
+numbers = [2, 43, 56, 67, 324]
+
+print(len(names))
+names.append(4)
+print(names)
+names.insert(2, "Radek")
+print(names)
+numbers.append([123, 3456, 547])  #dodaje listę jako całośc do listy podst.
+numbers.extend([123, 3456, 547])  #dodaje każdy el. jako osobny 
+print(numbers)
+
+
+
+
+ 
+
+
+
