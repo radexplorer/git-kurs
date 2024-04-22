@@ -158,9 +158,21 @@ names.append(4)
 print(names)
 names.insert(2, "Radek")
 print(names)
-numbers.append([123, 3456, 547])  #dodaje listę jako całośc do listy podst.
+#numbers.append([123, 3456, 547])  #dodaje listę jako całośc do listy podst.
 numbers.extend([123, 3456, 547])  #dodaje każdy el. jako osobny 
 print(numbers)
+names.insert(0, "Maria")
+print(names)
+print(numbers.index(43))
+
+numbers.sort(reverse=True)
+print(numbers) 
+print(numbers.count(67))
+
+
+
+
+
 
 
 
