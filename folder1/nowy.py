@@ -149,7 +149,7 @@ else:
     print("You don't have access")
 '''
 ### OPERACJE NA LISTACH
-
+'''
 names = ["Paula", "Ania", "Beata", "Kasia", "Gienek"]
 numbers = [2, 43, 56, 67, 324]
 
@@ -169,15 +169,76 @@ numbers.sort(reverse=True)
 print(numbers) 
 print(numbers.count(67))
 
+numbers.pop()
+print(numbers)
+
+# reverse - odwraca kolejnośc
+# clear - czyści tablice
+# remove(x) - usuwa xrr
+'''
+
+## KROTKA ## TUPLE
+'''
+krotka = (1, 23, 456, -5)
+
+krotka[0] = 0
+'''
+## SŁOWNIK ## DICTIONARY
+'''
+pokoje = {23: "Radosław Rudnik", 69: "Paula Głowacka"}
+
+pokoje[23] = "Ania głowacka"
+
+print(pokoje.get(23))
+
+pokoje.update({400: "Jan kowalski"})
+
+del(pokoje[400])
+
+print(pokoje.popitem())  #usuwa ostatni element 
+
+print(len(pokoje))
+
+print(pokoje)
+'''
+
+## ZBIÓR ###
+'''
+A = {1, 34, 456, 678, 45}
+B = {3245, 2, 45, 12, 67}
 
 
+A.add(5)
+A.discard(1) #zadziała nawet jak nie ma takiej wartości
+#A.remove(1)  #kiedy nie ma takiej wartości to wyrzuci błąd 
+print(A)
+print(set(A)) ## set usuwa duplikaty, zmiana listy w zbiór
+print(A|B)
+print(A^B)
+print(A-B)
+print(A.issubset(B))
+'''
 
+## TYPY ZAGNIEŻDŻONE ## lista w liście
 
+imie = "Radosław"
+wiek = 32
+płeć = "men"
 
+imie2 = "Paula"
+wiek2= 31
+płeć2 = "women"
 
+osoba1 = ("Radosław", 32, "men")
+osoba2 = ("Paula", 31, "women")
 
-
- 
+listaGości = [
+    ["Radosław", 32, "men"],
+    ["Paula", 31, "women"]
+]
+print(listaGości[1][2])
+listaGości[0][0] = "Błażej"
+print(listaGości)
 
 
 
