@@ -221,6 +221,7 @@ print(A.issubset(B))
 
 ## TYPY ZAGNIEŻDŻONE ## lista w liście
 
+'''
 imie = "Radosław"
 wiek = 32
 płeć = "men"
@@ -232,13 +233,96 @@ płeć2 = "women"
 osoba1 = ("Radosław", 32, "men")
 osoba2 = ("Paula", 31, "women")
 
-listaGości = [
-    ["Radosław", 32, "men"],
-    ["Paula", 31, "women"]
-]
-print(listaGości[1][2])
-listaGości[0][0] = "Błażej"
+listaGości = {
+    ("Radosław", 32, "men"),
+    ("P", 31, "women")
+}
+#print(listaGości[1][2])
+#listaGości[0][0] = "Błażej"
 print(listaGości)
 
+## krotka w liście ##  
+
+listaGości2 = {
+    ("R", 32, "men"),
+    ("Paula", 31, "women")
+}
+#listaGości2[0][0] = "Błażej" ##NIE MOŻNA ZMIENIAĆ STANU KROTKI
+#listaGości2.append(("Marcin", 37, "men"))
+print(listaGości2)
+
+listaGości3 = listaGości | listaGości2
+print(listaGości3)
+
+for imie, wiek, płeć in listaGości3:
+    print("imie: ", imie)
+    print("wiek: ", wiek)
+    print("płeć: ", płeć)
+    print("\n")
+'''
+
+## ZAWARTOŚĆ SŁOWNIKA ZAGNIEŻDŻONEGO W LIŚCIE/słowniku ##
+
+people = {
+    "c43ctwi37gh87w4hg587why": {"name": "Paula", "age": 31, "sex": "female" },
+    "chuaewfa34t45yxoiujhg55": {"name": "Kasia", "age": 5, "sex": "female" },
+    "c234r23r234r34t45y54y4y": {"name": "Błażej", "age": 14, "sex": "male" }
+} # Dodawanie nowych pozycji do słownika jest szybsze (worek)
+
+people2 = [
+    {"id": "c43ctwi37gh87w4hg587why", "name": "Paula", "age": 31, "sex": "female" },
+    {"id": "chuaewfa34t45yxoiujhg55", "name": "Kasia", "age": 5, "sex": "female" },
+    {"id": "chuaewfa34t45yxoiujhg55", "name": "Błażej", "age": 14, "sex": "male" }
+]
+
+people3 = ["Paula",
+           "Kasia",
+           "Błażej"
+]
+
+ratings1 = {
+    "Paula": (2, 3, 5, 6, 2),
+    "Błażej": (4, 4, 4, 2, 2)
+}
+
+ratings2 = [
+    {"name": "Paula", "ratings": (2, 3, 5, 6, 2), "behavior": 4},
+    {"name": "Błażej", "ratings": (4, 4, 4, 2, 2), "behavior": 2}
+]
+
+ratings3 = {
+    "Paula": {"ratings": (2, 3, 5, 6, 2), "behavior": 4},
+    "Błażej": {"ratings": (4, 4, 4, 2, 2), "behavior": 2}
+}
+'''
+for key in ratings1:
+    print(ratings1[key])
+
+for key in ratings1:
+    print(key, ": oceny", ratings1[key])
+
+for dictionary in people2:
+    for key in dictionary:
+        print(key,": ", dictionary[key])
+
+print(people["chuaewfa34t45yxoiujhg55"])
+'''
+'''
+for key in people:
+    print("ID: ", key)
+    for secondaryKey in people[key]:
+        print(secondaryKey, people[key][secondaryKey])
+
+for key in ratings1:
+    print(key, "oceny: ", ratings1[key])
+'''
+
+print(people.items())
+print(people)
+
+for id, dictionary in people.items():
+    print("ID: ", id)
+    for key in dictionary:
+        print(key, dictionary[key])
 
 
