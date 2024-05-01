@@ -1,4 +1,4 @@
-'''
+
 Program:
 1. Dodaje definicje
 2. Wyszukuje definiecje
@@ -60,13 +60,14 @@ print(potegaDwojki2, liczbyParzyste2)
 '''
 
 ## GENERATORS ## 
-
+'''
 import sys
 
 evenNumbers = [element
     for element in range(1000)
     if (element % 2 == 0)
     ]
+
 
 evenNumbersGen = (element
     for element in range(1000)
@@ -81,4 +82,50 @@ print(evenNumbers)
 print(sum(evenNumbers))
 print(sys.getsizeof(evenNumbersGen))
 print(sys.getsizeof(evenNumbers))
+'''
+
+## WYRAŻENIE SŁOWNIKOWE ##
+'''
+names = {"rad", "pau", "kat", "ann"}
+
+numbers = [1, 2, 3, 4, 5]
+
+celsius = {'t1': 4, 't2': 2, 't3': 7, 't4': 78}
+
+namesLength = {
+    name : len(name)
+    for name in names
+    if name.startswith("P")
+}
+print(namesLength)
+
+mulitpliedNumbers = {
+    number : number*3
+    for number in numbers
+}
+print(mulitpliedNumbers)
+print(celsius.items())
+
+fahrenheit = {
+    key: value*1.8+32
+    for key, value in celsius.items()
+    if value >= 5
+}
+print(fahrenheit)
+print(names)
+names = {name.capitalize() for name in names}
+print(names)
+'''
+'''
+## ZADANIE ##
+
+range(100, 471)
+
+for numbers in range(100, 471):
+    if numbers % 7 == 0 and numbers % 5 != 0:
+        print(numbers)
+
+#GEN
+
+
 
