@@ -1,6 +1,6 @@
 ## FUNKCJE ##
 ## def - inicjujemy funckę
-'''
+
 def welcome_message(name):
     print("Hello", name)
 
@@ -11,8 +11,8 @@ names = ["rad", "pau", "kat", "ann"]
 for name in names:
     welcome_message(name)
 
-        '''
-'''
+        
+
 def reactangle_area(a,b):
     return a*b
 
