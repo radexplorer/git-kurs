@@ -29,7 +29,7 @@ def divison(a,b):
 print(divison(10,0))
 
 # none to false(bool)
-'''
+
 def sum_positives(numbers):
     total = 0
 
