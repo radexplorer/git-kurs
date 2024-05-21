@@ -29,7 +29,7 @@ def divison(a,b):
 print(divison(10,0))
 
 # none to false(bool)
-
+'''
 def sum_positives(numbers):
     total = 0
 
@@ -42,3 +42,4 @@ def sum_positives(numbers):
 numbers = [-3, 0 , 23, 56]
 
 print(sum_positives(numbers))
+'''

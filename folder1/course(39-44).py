@@ -1,9 +1,9 @@
-
+'''
 Program:
 1. Dodaje definicje
 2. Wyszukuje definiecje
 3. Usuwa wybrane definicje
-
+'''
 definitions = {}
 
 while(True):
