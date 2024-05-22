@@ -16,6 +16,8 @@ for name in names:
 def reactangle_area(a,b):
     return a*b
 
+print(reactangle_area(2,7))
+
 #a = int(input("Give length of first side: "))
 #b = int(input("Give length of second side: "))
 
@@ -23,13 +25,13 @@ def reactangle_area(a,b):
 
 def divison(a,b):
     if (b==0):
-        return False
+        return 
     return a/b
 
 print(divison(10,0))
 
 # none to false(bool)
-'''
+
 def sum_positives(numbers):
     total = 0
 
@@ -42,4 +44,3 @@ def sum_positives(numbers):
 numbers = [-3, 0 , 23, 56]
 
 print(sum_positives(numbers))
-'''
