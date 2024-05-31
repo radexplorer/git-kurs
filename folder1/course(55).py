@@ -18,8 +18,8 @@ if (wybor == Manu_Figury.kwadrat.value):
     a = float(input("Podaj bok kwartatu: "))
     print("Pole kwadratu: ", module.pole_kwadratu(a))
 elif (wybor == Manu_Figury.prostokat):
-    a = float(input("Podaj dlugosc 1 boku: "))
-    b = float(input("Podaj dlugosc 2 boku: "))
+    a = float(input("Dlugosc 1 boku: "))
+    b = float(input("Dlugosc 2 boku: "))
     print("Pole prostokata: ", module.pole_prostokąta(a, b))
 elif (wybor == '3'):
     r = float(input("Podaj promien: "))
