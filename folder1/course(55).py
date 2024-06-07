@@ -10,7 +10,7 @@ print(list(Manu_Figury))
 wybor = int(input("""Wybierz figurę:
       1. kwadrat
       2. prostokat
-      3. koło
+      3. kolo
       4. trapez
       5. trojkat"""))
 

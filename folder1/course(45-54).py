@@ -2,7 +2,7 @@
 ## def - inicjujemy funckę
 
 import module
-'''
+
 def welcome_message(name):
     print("Hello", name)
 
@@ -46,7 +46,7 @@ def sum_positives(numbers):
 numbers = [-3, 0 , 23, 56]
 
 print(sum_positives(numbers))
-'''
+
 
 print(module.pole_kwadratu(5))
 
@@ -64,4 +64,3 @@ elif (wybor == '2'):
     a = float(input("Podaj dlugosc 1 boku: "))
     b = float(input("Podaj dlugosc 2 boku: "))
     print("Pole kwadratu: ", module.pole_prostokąta(a, b))
-
