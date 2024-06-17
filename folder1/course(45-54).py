@@ -53,7 +53,7 @@ print(module.pole_kwadratu(5))
 wybor = input("""Wybierz figurę:
       1. kwadrat
       2. prostokat
-      3. kolo
+      3. koło
       4. trapez
       5. trojkat""")
 
@@ -62,5 +62,5 @@ if (wybor == '1'):
     print("Pole kwadratu: ", module.pole_kwadratu(a))
 elif (wybor == '2'):
     a = float(input("Podaj dlugosc 1 boku: "))
-    b = float(input("Podaj dlugosc 2 boku: "))
+    b = float(input("Podaj dlugosc  2 boku: "))
     print("Pole kwadratu: ", module.pole_prostokąta(a, b))
